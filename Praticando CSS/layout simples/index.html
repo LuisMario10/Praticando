@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste layout simples</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">A</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Produtos</a>
+            <a href="#">Outras lojas</a>
+            <a href="#">Contato</a>
+        </nav>
+        <button class="botao">Cadastre-se</button>
+    </header>
+    <main>
+        <section class="secao-home">
+            <h1>A tem os produtos de alta qualidade, consira nossos preços!</h1>
+            <div class="fotoetxt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia asperiores praesentium mollitia dolorem fugiat in maiores, perferendis minima autem dolor ea ducimus, vel aspernatur nostrum deleniti cumque placeat maxime. 
+                </p>
+                <!-- Media Queries -->
+                <div class="conteiner-minifotos">
+                    <div class="minifoto">mini fotos</div>
+                    <div class="minifoto">mini fotos</div>
+                    <div class="minifoto">mini fotos</div>
+                </div>
+                <div class="fotoprincipal">foto da empresa</div>
+            </div>
+        </section>
+       
+        <section class="secao-1">
+            <h1>10 Produtos Mais Vendidos</h1>
+           
+            <div class="container-produtos">
+                <article>Produto A</article>
+                <article>Produto B</article>
+                <article>Produto C </article>
+                <article>Produto D</article>
+                <article>Produto E</article>
+                <article>Produto F</article>
+                <article>Produto G</article>
+                <article>Produto H</article>
+                <article>Produto I</article>
+                <article>Produto J</article>
+            </div>  
+        </section>
+        <section class="secao-2">
+            <h1>Mais produtos</h1>
+            <aside>
+                <h2>Anúncios</h2>
+                <div class="anuncios">
+                    <p>anunciante 1 - <a href="#">Link 1</a></p>
+                    <p>anunciante 2 -<a href="#">Link 2</a></p>
+                    <p>anunciante 3 - <a href="#">Link 3</a></p>
+                    <p>anunciante 4 - <a href="#">Link 4</a></p>
+                    <p>anunciante 5 -<a href="#">Link 5</a></p>
+                </div>
+            </aside>
+            <div class="container-grid">
+                <article id="item1">Produto 1</article>
+                <article id="item2">Produto 2</article>
+                <article id="item3">Produto 3</article>
+                <article id="item4">Produto 4</article>
+                <article id="item5">Produto 5</article>
+                <article id="item6">Produto 6</article>
+                <article id="item7">Produto 7</article>
+                <article id="item8">Produto 8</article>
+                <article id="item9">Produto 9</article>
+                <article id="item10">Produto 10</article>
+            </div>
+            
+        </section>
+        
+        <section class="secao-3">
+            <h1>Extras e feedback </h1>
+            <label for="coment" id="txtcoment">Comente aqui: </label>
+            <input type="text" id="coment"><br>
+            <select name="areacoment" id="areacoment" size="6">
+                <option value="c1">Leia os comentarios dos outros clientes</option>
+            </select><br>
+            <div class="feedback">
+                <h3>Deixe seu FeedBack para a Página</h3>
+                <input type="radio" name="escs" id="esc1">
+                <label for="es1">Gostei Muito</label><br>
+                <input type="radio" name="escs" id="esc1">
+                <label for="es1">Bom Site</label><br>
+                <input type="radio" name="escs" id="esc1">
+                <label for="es1">Neutro</label><br>
+                <input type="radio" name="escs" id="esc1">
+                <label for="es1">Ruim</label><br>
+                <input type="radio" name="escs" id="esc1">
+                <label for="es1">Não gostei</label>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>Since ../../....</h3>
+        <p>autoria do site: ......</p>
+    </footer>
+</body>
+</html>

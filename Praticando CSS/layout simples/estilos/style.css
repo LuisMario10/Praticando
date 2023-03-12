@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    background: rgb(92, 240, 154);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: rgb(94, 93, 93);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.logo {
+    color:rgb(16, 147, 71);
+    background: white;
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 30px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+nav a {
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    background:rgb(255, 255, 255);
+    margin: 5px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 0px 0px 10px 0px;
+    padding: 8px;
+}
+
+nav a:hover {
+    color: white;
+    background:rgb(170, 169, 169);
+    border: 1px solid rgb(16, 147, 71); 
+    transition-duration: .2s;
+}
+
+.botao {
+    color: white;
+    background:rgb(16, 147, 71);
+    border: 2px solid white;
+    font-weight: bold;
+    border-radius: 0px 0px 10px 0px;
+    padding: 10px;
+}
+
+.botao:hover {
+    padding: 12px;
+    border-radius: 10px ;
+}
+
+.secao-home {
+    background: linear-gradient(to top,rgb(92, 240, 154),rgba(255,255,255) );
+}
+
+.secao-home h1 {
+    text-align: center;
+    background-color: rgb(73, 186, 120);
+}
+
+.secao-home .fotoetxt {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.secao-home .fotoetxt p {
+    border: 1px solid black;
+    max-height: 350px;
+}
+
+.minifoto {
+    display: none;
+}
+
+.secao-home .fotoprincipal {
+    float: right;
+    line-height: 300px;
+    text-align: center;
+    background: rgb(80, 230, 100);
+    border: 1px solid black;
+    width: 200px;
+    padding-left: auto;
+    height: 350px;
+    min-width: 350px;
+    margin-left: auto;
+    border-radius: 100px;
+}
+
+.secao-1 {
+    background: rgb(92, 240, 154);
+    border-bottom: 3px solid rgb(4, 131, 57);
+}
+
+.secao-1 h1 {
+    text-align: center;
+    background-color: rgb(73, 186, 120);
+}
+
+.secao-1 article {
+    border: 1px solid black;
+    background:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    text-align: center;
+    line-height: 200px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.container-produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+aside {
+    float: right;
+    position: sticky;
+    top: 0;
+    background:rgb(154, 175, 162);
+    width: 190px;
+}
+
+aside h2 {
+    background:rgb(73, 186, 120);
+    border: 1px solid black;
+}
+
+aside p {
+    border: 1px solid black;
+    height: 137px;
+}
+
+aside p a {
+    text-decoration: none;
+    color: rgb(8, 101, 47);
+    background:rgb(65, 239, 138);
+}
+
+.secao-2 .container-grid {
+    display: grid;
+    grid-template-areas: 
+    'item1 item2'
+    'item3 item4'
+    'item5 item6'
+    'item7 item8'
+    'item9 item10'
+}
+
+.secao-2 h1 {
+    text-align: center;
+    background-color: rgb(73, 186, 120);
+}
+
+.secao-2 article {
+    border: 1px solid black;
+    background:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    text-align: center;
+    line-height: 200px;
+    height: 250px;
+    min-width: 100px;
+    margin: 10px;
+}
+
+#item1 {
+    grid-area: item1;
+}
+
+#item2 {
+    grid-area: item2;
+}
+
+#item3 {
+    grid-area: item3;
+}
+
+#item4 {
+    grid-area: item4;
+}
+
+#item5 {
+    grid-area: item5;
+}
+
+#item6 {
+    grid-area: item6;
+}
+
+#item7 {
+    grid-area: item7;
+}
+
+#item8 {
+    grid-area: item8;
+}
+
+#item9 {
+    grid-area: item9;
+}
+
+#item10 {
+    grid-area: item10;    
+}
+
+
+.secao-3 {
+    background: linear-gradient(to bottom, rgb(92, 240, 154), rgba(255,255,255));
+    margin-top: 5px;
+    height: 300px;
+}
+
+.secao-3 h1 {
+    text-align: center;
+    background: rgb(73, 186, 120);
+}
+
+.secao-3 #txtcoment {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.secao-3 #coment {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.secao-3 #areacoment {
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 10px;
+    border-top: 2px solid green;
+    background: white;
+    height: 160px;
+}
+
+@media screen and (max-width: 520px) {
+    .secao-home .fotoetxt {
+        border: 1px solid black;
+        display: block;
+    }
+
+    .secao-home .fotoetxt p {
+        height: 200px;
+    }
+
+    .conteiner-minifotos {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .conteiner-minifotos .minifoto {
+        display: block;
+        text-align: center;
+        line-height: 175px;
+        width: 375px;
+        height: 175px;
+        border: 1px solid black;
+        background: rgb(80, 230, 100);
+    }
+
+    .secao-home .fotoprincipal {
+        display: none;
+    }
+    .secao-2 .container-grid {
+        display: block;
+    }
+    .secao-2 article {
+        width: 255px;
+    }
+}
