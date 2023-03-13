@@ -29,7 +29,7 @@ header {
 
 nav {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 nav a {
