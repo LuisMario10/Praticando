@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to left, rgb(88, 142, 243), rgb(81, 243, 200));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.363);
+    padding: 10px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+header .logo {
+    background: rgb(73, 73, 243);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px black;
+}
+
+header nav {
+    display: flex;
+    gap: 5px;
+}
+
+header nav a {
+    border-bottom: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+header nav a:hover {
+    padding: 6px;
+    color: black;
+    border: 1px solid black;
+    transition: .5s
+}
