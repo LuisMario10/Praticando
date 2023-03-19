@@ -21,7 +21,7 @@ header .logo {
     background: rgb(73, 73, 243);
     border: 1px solid rgb(255, 255, 255);
     padding: 15px;
-    border-radius: 40px;
+    border-radius: 0px 40px 40px 40px;
     color: white;
     font-weight: bold;
     box-shadow: 1px 1px 3px black;
@@ -43,6 +43,22 @@ header nav a {
 header nav a:hover {
     padding: 6px;
     color: black;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     transition: .5s
+}
+
+main {
+    border: 1px solid black;
+    margin-top: 10px;
+    display: grid;
+    grid-template-areas: 
+    'texto foto'
+}
+
+main .foto {
+    border: 1px solid black;
+}
+
+main .texto {
+    border: 1px solid black;
 }
