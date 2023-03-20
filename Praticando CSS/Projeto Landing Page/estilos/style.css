@@ -10,7 +10,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: rgba(0, 0, 0, 0.363);
     padding: 10px;
@@ -34,17 +34,24 @@ header nav {
 
 header nav a {
     border-bottom: 1px solid black;
-    border-radius: 4px;
-    padding: 5px;
+    border-radius: 30px;
+    padding: 20px;
     text-decoration: none;
     color: white;
 }
 
 header nav a:hover {
-    padding: 6px;
-    color: black;
+    background: lightblue;
+    color: rgb(0, 0, 0);
     border: 1px solid rgb(255, 255, 255);
+    border-radius: 0px 30px 30px 30px;
     transition: .5s
+}
+
+header #botao {
+    background: lightblue;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 main {
@@ -52,7 +59,7 @@ main {
     margin-top: 10px;
     display: grid;
     grid-template-areas: 
-    'texto foto'
+    'texto foto';
 }
 
 main .foto {
@@ -61,4 +68,5 @@ main .foto {
 
 main .texto {
     border: 1px solid black;
+    text-align: center;
 }
