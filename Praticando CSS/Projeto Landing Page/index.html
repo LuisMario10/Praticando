@@ -4,30 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beba Agua</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="logo">miBeba!</div>
-        <nav>
-            <a href="#">H</a>
-            <a href="#">2</a>
-            <a href="#">O</a>
+        <div class="logo">
+            <h1>
+                miBeba!
+            </h1>
+        </div>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Contato</a>
+            <a href="#">Sobre</a>
         </nav>
-        <button id="botao">Agua é Vida</button>
+        <button>
+            Inscreva-se
+        </button>
     </header>
     <main>
-        <div class="texto" id="texto">
-            <h1>Titulo</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique eius possimus, commodi dolore molestiae porro omnis, provident ad hic ut ullam! Temporibus perferendis repellendus, et esse sapiente quibusdam ipsam numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse totam at impedit possimus unde, omnis voluptas sapiente corrupti rem, minima dolorem perspiciatis! Nesciunt velit quis vero cumque consectetur nostrum rerum.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis magni quod unde dolorum voluptas tempore, repellendus aut rem! Ad commodi nobis reprehenderit possimus nulla vero rerum perspiciatis voluptatem qui impedit.
-            </p>
-        </div>
-        <div class="foto" id="foto"><img src="imagens/copodeagua.jpg"></div>
+        <section>
+            <div classs="texto">
+                <h1>Você consome Água o suficiente?</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quis sit et dolore itaque ducimus commodi, doloremque incidunt ipsa quia, quibusdam laboriosam nobis quaerat exercitationem. Veniam odio dolore quo nam?</p>
+            </div>
+            <div class="foto"> 
+                <!-- Aqui vai estar a foto -->
+            </div>
+        </section>
+        <section>
+            <h2>Nos ajude respondendo o formulário</h2>
+            <form action="#" method="post">
+                <h3>Voce consome em media 2 litros de agua por dia?</h3>
+                <label for="sim">Sim</label>
+                <input type="radio" name="escolha" id="sim">
+                <label for="nao">Não</label>
+                <input type="radio" name="escolha" id="nao">
+
+                <h3>Envie um comentario: </h3>
+                <input type="email" name="email" id="iemail">
+                <label for="iemail">Email</label><br><br>
+                <label for="imens">Mensagem</label><br>
+                <textarea name="mensag" id="" cols="30" rows="10"></textarea>
+            </form>
+        </section>
     </main>
     <footer>
-        <h2>feito por: Luis Mario</h2>
+
     </footer>
 </body>
 </html>
