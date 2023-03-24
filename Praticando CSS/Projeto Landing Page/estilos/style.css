@@ -1,0 +1,100 @@
+:root {
+    --cor1: rgb(74, 136, 156);
+    --cor2: rgb(96, 186, 216);
+    --cor3: rgb(140, 225, 253);
+    --cor4: rgb(184, 222, 235);
+    --cordark: rgb(7, 68, 133);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor3);
+}
+
+header {
+    background: var(--cor2);
+    border-bottom: 2px solid white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+header .logo {
+    color: white;
+    background: var(--cor1);
+    box-shadow: 2px 2px 5px rgb(7, 68, 133);
+    border: 1px solid black;
+    border-radius: 0px 30px 30px 30px;
+    padding: 5px;
+}
+
+header nav {
+    display: flex;
+    gap: 25px;
+}
+
+header nav a {
+    background: var(--cor3);
+    color: var(--cor1);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 0px 30px 30px 30px;
+}
+
+header nav a:hover {
+    background: var(--cor2);
+    color: white;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    box-shadow: 2px 2px 5px var(--cordark);
+    transition: .4s;
+}
+
+header .btn {
+    background: var(--cor4);
+    border: 3px solid var(--cor1);
+    border-radius: 0px 20px 20px 20px;
+    padding: 10px;
+}
+
+main .secao-principal {
+    background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("../Imagens/calor-oceano.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .secao-principal .foto {
+    border: 2px solid black;
+    background: url("../Imagens/Copo_agua.jpg")
+}
+
+#titulo-texto, #descricao {
+    color: rgb(70, 0, 0);
+    padding: 15px;
+    width: 30vw;
+    height: 30%;
+}
+
+#titulo-texto {
+    background:var(--cordark);
+    color: var(--cor4);
+}
+
+#descricao {
+    background: white;
+    
+}
