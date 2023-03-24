@@ -31,25 +31,34 @@
                 <img src="Imagens/Copo_agua.jpg" alt="copo de agua">
             </div>
         </section>
-        <section>
-            <h2>Nos ajude respondendo o formulário</h2>
+        <section class="secao-formulario">
+            <h2 id="titulo-form">Nos ajude respondendo o formulário</h2>
             <form action="#" method="post">
-                <h3>Voce consome em media 2 litros de agua por dia?</h3>
-                <label for="sim">Sim</label>
-                <input type="radio" name="escolha" id="sim">
-                <label for="nao">Não</label>
-                <input type="radio" name="escolha" id="nao">
+                <div class="perguntas">
+                    <h3>Voce consome em media 2 litros de agua por dia?</h3>
+                    <label for="sim">Sim</label>
+                    <input type="radio" name="escolha" id="sim">
+                    <label for="nao">Não</label>
+                    <input type="radio" name="escolha" id="nao">
+                </div>
 
-                <h3>Envie um comentario: </h3>
-                <input type="email" name="email" id="iemail">
-                <label for="iemail">Email</label><br><br>
-                <label for="imens">Mensagem</label><br>
-                <textarea name="mensag" id="" cols="30" rows="10"></textarea>
+                <div class="comentarios">
+                    <h3>Envie um comentario: </h3>
+                    <input type="email" name="email" id="iemail"><br>
+                    <label for="iemail">Email</label><br><br>
+                    <label for="imens">Mensagem</label><br>
+                    <textarea name="mensag" id="" cols="30" rows="10"></textarea><br>
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+                </div>
             </form>
         </section>
     </main>
     <footer>
+        <h4>feito por: luis mario</h4><br>
+        <p>Muito obrigado pelo acesso. Este projeto foi feito para exercitar de HTML e CSS</p>
 
+        <p class="redes">redes: INSTA: luis_xr10</p>
     </footer>
 </body>
 </html>

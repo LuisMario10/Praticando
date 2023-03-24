@@ -15,6 +15,7 @@
 
 body {
     background-color: var(--cor3);
+    height: 100vh;
 }
 
 header {
@@ -67,34 +68,113 @@ header .btn {
     padding: 10px;
 }
 
+header .btn:hover {
+    padding: 12px;
+}
+
 main .secao-principal {
     background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("../Imagens/calor-oceano.jpg");
     background-position: center;
     background-size: cover;
-    height: 80vh;
+    height: 70vh;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 main .secao-principal .foto {
-    border: 2px solid black;
+    border: 2px solid rgb(102, 235, 208);
+    border-radius: 10px;
     background: url("../Imagens/Copo_agua.jpg")
 }
 
 #titulo-texto, #descricao {
     color: rgb(70, 0, 0);
     padding: 15px;
-    width: 30vw;
+    width: 35vw;
     height: 30%;
+    box-shadow: 2px 2px 5px black;
 }
 
 #titulo-texto {
     background:var(--cordark);
     color: var(--cor4);
+    border-radius: 0px 30px 0px 0px;
 }
 
 #descricao {
     background: white;
+    height: 40%;
+    border-radius: 0px 0px 30px 30px;
+}
+
+main .secao-formulario {
+    background: var(--cordark);
+    height: 75vh;
+}
+
+main .secao-formulario h2 {
+    background: linear-gradient(to left, var(--cordark),var(--cor4));
+    color: white;
+    line-height: 110px;
+    text-align: center;
+    font-weight: bolder;
+    border-top: 5px solid white;
+    border-bottom: 5px solid var(--cor1);
+}
+
+main .secao-formulario form  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perguntas, .comentarios {
+    background: var(--cor4);
+    border: 1px solid black;
+    margin-top: 20px;
     
+}
+
+.perguntas {
+    width: 200px;
+    padding: 20px;
+    height: 275px;
+    border-right: 1px solid var(--cor1);
+    border-radius: 10px 0px 0px 10px;
+    padding: 50px;
+}
+
+.comentarios {
+    border-radius: 0px 10px 10px 0px;
+}
+
+#iemail {
+    margin-left: 15px;
+    border: none;
+    border-bottom: 3px solid var(--cordark);
+    background: rgb(255, 255, 255);
+}
+
+footer {
+    background: black;
+}
+
+footer h4 {
+    background: white;
+    text-align: center;
+    line-height: 75px;
+}
+footer p {
+
+    color: white;
+}
+
+footer .redes {
+    background:rgb(184, 222, 235);
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    line-height: 55px;
 }
