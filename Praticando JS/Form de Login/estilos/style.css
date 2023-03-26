@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor1: rgb(42, 168, 0);
+    --cor2: rgb(53, 201, 3);
+    --cor3: rgb(77, 255, 18);
+    --cor4: rgb(150, 254, 116);
+}
+
+body {
+    background: linear-gradient(to top, var(--cor1), var(--cor3) , var(--cor2));
+}
+
+header { 
+    background: var(--cor3);
+}
+
+section {
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+    url("../imagens/fundo-verde.jpg");
+    border: 1px solid black;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    height: 80vh;
+}
+
+.formulario {
+    background: linear-gradient(to top, var(--cor1), var(--cor4));
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.formulario h2 {
+    margin-top: -30px;
+    border-radius: 0px 0px 10px 10px;
+    background: var(--cor2);
+    text-align: center;
+}
+
+.formulario form .botoes {
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: -30px;
+    background: var(--cor3);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
