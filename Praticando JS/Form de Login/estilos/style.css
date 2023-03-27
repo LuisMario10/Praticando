@@ -19,7 +19,12 @@ body {
 }
 
 header { 
-    background: var(--cor3);
+    background: var(--cor1);
+}
+
+header h1 {
+    text-shadow: 3px 3px 5px rgb(255, 255, 255);
+    text-align: center;
 }
 
 section {
@@ -56,4 +61,14 @@ section {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+#nome, #email, #senha {
+    border: none;
+    background: rgba(255, 255, 255, 0);
+}
+
+#nome, #email, #senha {
+    border: none;
+    background: rgba(255, 255, 255, 0.451);
 }
