@@ -30,6 +30,8 @@ header h1 {
 section {
     background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
     url("../imagens/fundo-verde.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     border: 1px solid black;
     width: 100vw;
     display: flex;
@@ -50,6 +52,7 @@ section {
     margin-top: -30px;
     border-radius: 0px 0px 10px 10px;
     background: var(--cor2);
+    color: white;
     text-align: center;
 }
 
@@ -63,12 +66,20 @@ section {
     gap: 20px;
 }
 
-#nome, #email, #senha {
-    border: none;
-    background: rgba(255, 255, 255, 0);
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-#nome, #email, #senha {
-    border: none;
-    background: rgba(255, 255, 255, 0.451);
+#nome, #email, #senha, #limpar, #enviar {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #1f3917;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+#limpar {
+    color: white;
+    background: var(--cor1);
 }
